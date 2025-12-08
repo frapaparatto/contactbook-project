@@ -8,8 +8,6 @@ from contact_exceptions import (
 
 
 class TestValidators(unittest.TestCase):
-
-
     def test_validate_name(self):
         first_name = "    Isaac"
         last_name = "  newton  "
