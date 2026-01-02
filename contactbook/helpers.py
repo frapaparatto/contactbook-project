@@ -1,7 +1,7 @@
-from addressbook import AddressBook
-from contacts import Contact
-from contact_validators import validate_name, validate_email, validate_phone_number
-from contact_exceptions import (
+from .addressbook import AddressBook
+from .contacts import Contact
+from .contact_validators import validate_name, validate_email, validate_phone_number
+from .contact_exceptions import (
     ContactNotFoundError,
     InvalidEmailError,
     InvalidPhoneError,

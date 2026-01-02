@@ -2,7 +2,7 @@
 import os
 import json
 from typing import Dict, Protocol
-from contact_exceptions import StorageError, FileCorruptionError
+from .contact_exceptions import StorageError, FileCorruptionError
 
 
 class Storage(Protocol):

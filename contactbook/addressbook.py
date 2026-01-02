@@ -1,7 +1,7 @@
 from typing import Dict, List, Optional
-from contacts import Contact
-from contact_exceptions import DuplicateContactError, ContactNotFoundError
-from storage import Storage
+from .contacts import Contact
+from .contact_exceptions import DuplicateContactError, ContactNotFoundError
+from .storage import Storage
 
 class AddressBook:
     def __init__(self, storage: Storage):

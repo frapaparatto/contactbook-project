@@ -1,6 +1,6 @@
 import unittest
-from contact_validators import validate_name, validate_email, validate_phone_number
-from contact_exceptions import (
+from contactbook.contact_validators import validate_name, validate_email, validate_phone_number
+from contactbook.contact_exceptions import (
     InvalidEmailError,
     InvalidPhoneError,
     MissingRequiredFieldError,

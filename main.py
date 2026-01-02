@@ -1,15 +1,15 @@
 import sys
 from os import name, system
-from contacts import Contact
-from addressbook import AddressBook
-from storage import Storage, JsonStorage
-from contact_validators import validate_phone_number, validate_email
-from helpers import (
+from contactbook.contacts import Contact
+from contactbook.addressbook import AddressBook
+from contactbook.storage import Storage, JsonStorage
+from contactbook.contact_validators import validate_phone_number, validate_email
+from contactbook.helpers import (
     prompt_contact_fields,
     render_contacts,
     get_contact,
 )
-from contact_exceptions import (
+from contactbook.contact_exceptions import (
     InvalidPhoneError,
     InvalidEmailError,
     ContactValidationError,

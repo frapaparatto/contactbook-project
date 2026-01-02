@@ -1,8 +1,8 @@
 import unittest
-from storage import JsonStorage
-from contacts import Contact
-from addressbook import AddressBook
-from contact_exceptions import DuplicateContactError, ContactNotFoundError
+from contactbook.storage import JsonStorage
+from contactbook.contacts import Contact
+from contactbook.addressbook import AddressBook
+from contactbook.contact_exceptions import DuplicateContactError, ContactNotFoundError
 
 
 # In this class I will test CRUD operations so I will assume that data format is correct (tested in test contact module)

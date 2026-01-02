@@ -1,6 +1,6 @@
 
 import re
-from contact_exceptions import (
+from .contact_exceptions import (
     InvalidEmailError,
     InvalidPhoneError,
     MissingRequiredFieldError,
