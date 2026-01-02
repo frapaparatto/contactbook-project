@@ -43,3 +43,7 @@ The project is organized as follows:
   - `contact_exceptions.py`: Defines custom exceptions for the application.
   - `helpers.py`: Includes helper functions for the CLI.
 - `tests/`: Contains unit tests for the project.
+
+## Future Plans
+
+-   **Refactoring**: The project will undergo a refactoring process to improve its design and maintainability.
