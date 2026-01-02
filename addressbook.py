@@ -2,7 +2,6 @@ from typing import Dict, List, Optional
 from contacts import Contact
 from contact_exceptions import DuplicateContactError, ContactNotFoundError
 from storage import Storage
-# TODO: update test_addressbook.py because now addressbook accept storage object as argument
 
 class AddressBook:
     def __init__(self, storage: Storage):
