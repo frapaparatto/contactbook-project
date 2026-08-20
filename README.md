@@ -1,49 +1,39 @@
 # Contact Book
 
-A simple but powerful command-line (CLI) contact book application written in Python.
+A command-line contact book written in Python, with no dependencies outside the standard library.
 
 ## Features
 
-- **Add, Edit, and Delete Contacts**: Manage your contacts with ease.
-- **Search Functionality**: Quickly find contacts by name.
-- **Data Persistence**: Save your contact book to a JSON file and load it back.
-- **Duplicate Prevention**: Avoid duplicate entries based on phone number or email.
-- **Input Validation**: Ensures data integrity for phone numbers and emails.
+- Add, edit, and delete contacts
+- Search contacts by name
+- Save and load a contact book as a JSON file
+- Duplicate detection by phone number or email
+- Validation of phone numbers and email addresses
 
-## How to Use
+## Usage
 
-1.  **Run the application**:
-    ```bash
-    python main.py
-    ```
+Run the application:
 
-2.  **Start a new contact book or load an existing one**:
-    - Type `new` to start with a fresh contact book.
-    - Type `load` and provide the path to a `.json` file to load existing contacts.
+```bash
+python main.py
+```
 
-3.  **Use the main commands to manage your contacts**:
-    - `add`: Add a new contact.
-    - `list`: Show all contacts.
-    - `search`: Find a specific contact.
-    - `edit`: Modify an existing contact.
-    - `delete`: Remove a contact.
-    - `save`: Save your changes to a JSON file.
-    - `exit`: Exit the application.
+You'll first be asked to either start fresh or load existing data:
 
-## Project Structure
+- `new`: start with an empty contact book
+- `load`: load contacts from a `.json` file (you'll be prompted for the path)
 
-The project is organized as follows:
+Once inside, the following commands are available:
 
-- `main.py`: The main entry point for the CLI application.
-- `contactbook/`: The core Python package for the contact book.
-  - `contacts.py`: Defines the `Contact` data model.
-  - `addressbook.py`: Contains the `AddressBook` class for managing contacts.
-  - `storage.py`: Handles saving and loading contacts (e.g., `JsonStorage`).
-  - `contact_validators.py`: Provides validation for contact fields like phone and email.
-  - `contact_exceptions.py`: Defines custom exceptions for the application.
-  - `helpers.py`: Includes helper functions for the CLI.
-- `tests/`: Contains unit tests for the project.
+- `add`: add a new contact
+- `list`: list all contacts
+- `search`: find a contact
+- `edit`: edit a contact
+- `delete`: delete a contact
+- `save`: save changes to a JSON file
+- `clear`: clear the screen
+- `exit`: quit the application
 
-## Future Plans
+## Roadmap
 
--   **Refactoring**: The project will undergo a refactoring process to improve its design and maintainability.
+The project is due for a refactor to improve its internal design and maintainability.
